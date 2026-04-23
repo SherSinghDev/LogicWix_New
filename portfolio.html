@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — LogicWix Digital Agency</title>
+  <meta name="description"
+    content="Browse LogicWix's portfolio of 350+ successful projects across web development, mobile apps, UI/UX design, and digital marketing.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/portfolio.css">
+</head>
+
+<body>
+
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Logic<span>Wix</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-cta d-none d-lg-block"><a href="contact.html" class="btn-glow">Get Started</a></div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Our <span class="gradient-text">Portfolio</span></h1>
+    <p>Explore our latest work — each project is a testament to our commitment to excellence and innovation.</p>
+    <nav class="breadcrumb-custom" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Portfolio</li>
+      </ol>
+    </nav>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="section-padding">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">UI/UX</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid stagger-container">
+        <div class="portfolio-item stagger-item" data-category="mobile" data-title="Skill Swap Community App"
+          data-desc="A cross-platform mobile app that enables users to exchange skills by teaching what they know and learning from others.">
+          <img src="https://shersinghdeveloper.netlify.app/assets/images/portfolio/1.png" alt="Skill Swap">
+          <div class="portfolio-overlay">
+            <h4>Skill Swap App</h4><span>Mobile App • React Native</span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="mobile" data-title="Used Gizmo App"
+          data-desc="Mobile application for buying and selling used gadgets with secure Razorpay integration and order management.">
+          <img src="https://shersinghwebportfolio.netlify.app/assets/images/portfolio/used.png" alt="Used Gizmo">
+          <div class="portfolio-overlay">
+            <h4>Used Gizmo App</h4><span>Mobile App • Node.js</span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Yuvaan Waterproofing"
+          data-desc="Professional waterproofing solutions website with service listings and contact integration.">
+          <img src="assets/images/project/yuvaan.png" alt="Yuvaan">
+          <div class="portfolio-overlay">
+            <h4>Yuvaan Waterproofing</h4><span><a href="https://yuvaanwaterproofingsolutions.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="BSRF Solar"
+          data-desc="Solar service provider platform featuring energy solutions and service tracking.">
+          <img src="assets/images/project/bsrf.png" alt="BSRF Solar">
+          <div class="portfolio-overlay">
+            <h4>BSRF Solar Service</h4><span><a href="https://www.bsrfsolar.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="LogicAlpha IT"
+          data-desc="IT solutions company website showcasing software services and digital products.">
+          <img src="assets/images/project/logicalpha.png" alt="LogicAlpha">
+          <div class="portfolio-overlay">
+            <h4>LogicAlpha IT Solutions</h4><span><a href="https://logicalpha.netlify.app/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Harsh Tour & Travels"
+          data-desc="Travel agency website with tour packages and booking integration.">
+          <img src="assets/images/project/harshtourpng.png" alt="Harsh Tour">
+          <div class="portfolio-overlay">
+            <h4>Harsh Tour & Travels</h4><span><a href="https://harshtour.netlify.app/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Zoro Infotech"
+          data-desc="IT company website for Zoro Infotech, focusing on modern software.">
+          <img src="assets/images/project/zoro.png" alt="Zoro Infotech">
+          <div class="portfolio-overlay">
+            <h4>Zoro Infotech</h4><span><a href="https://zoroinfotech.netlify.app/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="mobile" data-title="Saadhya AI"
+          data-desc="Cutting-edge AI platform integration for Saadhya.">
+          <img src="assets/images/project/saadhya.png" alt="Saadhya AI">
+          <div class="portfolio-overlay">
+            <h4>Saadhya AI</h4><span><a href="https://saadhya.ai/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Ram Dhanya"
+          data-desc="Brand identity and web presence for Ram Dhanya.">
+          <img src="assets/images/project/ramdhanya.png" alt="Ram Dhanya">
+          <div class="portfolio-overlay">
+            <h4>Ram Dhanya</h4><span><a href="https://ramdhaanya.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="branding" data-title="Beautiful Portfolio"
+          data-desc="Elegant personal portfolio showcase.">
+          <img src="assets/images/project/lincon.png" alt="Portfolio">
+          <div class="portfolio-overlay">
+            <h4>Beautiful Portfolio</h4><span><a href="https://limegreen-penguin-913778.hostingersite.com/"
+                target="_blank" style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="RV Constructor"
+          data-desc="Construction company website with portfolio of works.">
+          <img src="assets/images/project/rvconst.png" alt="RV Constructor">
+          <div class="portfolio-overlay">
+            <h4>RV Constructor</h4><span><a href="https://rvconst.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Keller Preece"
+          data-desc="Professional services website for Keller Preece.">
+          <img src="assets/images/project/kellerpreece.png" alt="Keller Preece">
+          <div class="portfolio-overlay">
+            <h4>Keller Preece</h4><span><a href="https://kellerpreece.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="design" data-title="Future Counseling"
+          data-desc="Educational counseling website.">
+          <img src="assets/images/project/futurecounsel.png" alt="Counseling">
+          <div class="portfolio-overlay">
+            <h4>Future Counseling</h4><span><a href="https://www.futurecounselors.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="design" data-title="Luxure"
+          data-desc="Premium luxury brand experience.">
+          <img src="assets/images/project/luxure.png" alt="Luxure">
+          <div class="portfolio-overlay">
+            <h4>Luxure</h4><span><a href="https://www.luxure.co.in/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Engage Aish"
+          data-desc="Multimedia engagement platform.">
+          <img src="assets/images/project/aish.png" alt="Engage Aish">
+          <div class="portfolio-overlay">
+            <h4>Engage Aish</h4><span><a href="https://engage.aish.com/oct-7-film-video/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="mobile" data-title="Trium Reality"
+          data-desc="Real estate platform for Trium Reality.">
+          <img src="assets/images/project/triumreality.png" alt="Trium Reality">
+          <div class="portfolio-overlay">
+            <h4>Trium Reality</h4><span><a href="https://triumrealty.us/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Gas Detectors"
+          data-desc="Safety equipment showcase.">
+          <img src="assets/images/project/gasdetector.png" alt="Gas Detectors">
+          <div class="portfolio-overlay">
+            <h4>Gas Detectors</h4><span><a href="https://gasdetectors.ae/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Dehu Midifiers"
+          data-desc="Specialized equipment store.">
+          <img src="assets/images/project/dehumidi.png" alt="Dehumidifiers">
+          <div class="portfolio-overlay">
+            <h4>Dehu Midifiers</h4><span><a href="https://dehumidifiershop.ae/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="marketing" data-title="Marketing Blue Ocean"
+          data-desc="Digital marketing agency services.">
+          <img src="assets/images/project/marketing.png" alt="Blue Ocean">
+          <div class="portfolio-overlay">
+            <h4>Marketing Blue Ocean</h4><span><a href="https://marketingblueocean.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Infra Tips"
+          data-desc="Infrastructure insights and tools.">
+          <img src="assets/images/project/infratips.png" alt="Infra Tips">
+          <div class="portfolio-overlay">
+            <h4>Infra Tips</h4><span><a href="https://infratips.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="branding" data-title="LVDS"
+          data-desc="Corporate branding and solutions.">
+          <img src="assets/images/project/lvds.png" alt="LVDS">
+          <div class="portfolio-overlay">
+            <h4>LVDS</h4><span><a href="https://lvds.in/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Chowk"
+          data-desc="Local business directory platform.">
+          <img src="assets/images/project/chowk.png" alt="Chowk">
+          <div class="portfolio-overlay">
+            <h4>Chowk</h4><span><a href="https://chowk.co.in/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Delhi059"
+          data-desc="Service portal for Delhi059.">
+          <img src="assets/images/project/delhi059.png" alt="Delhi059">
+          <div class="portfolio-overlay">
+            <h4>Delhi059</h4><span><a href="https://delhi059.ca/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="House of Assistance"
+          data-desc="Service platform for House of Assistance.">
+          <img src="assets/images/project/houseof.png" alt="Assistance">
+          <div class="portfolio-overlay">
+            <h4>House of Assistance</h4><span><a href="https://houseofassistance.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Addelapalm Resort"
+          data-desc="Luxury resort booking website.">
+          <img src="assets/images/project/addels.png" alt="Resort">
+          <div class="portfolio-overlay">
+            <h4>Addelapalm Resort</h4><span><a href="https://addelapalmresort.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="Carpet and Flooring"
+          data-desc="Interior design and flooring showcase.">
+          <img src="assets/images/project/carpetandflooring.png" alt="Flooring">
+          <div class="portfolio-overlay">
+            <h4>Carpet and Flooring</h4><span><a href="https://carpetandflooringconnection.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+        <div class="portfolio-item stagger-item" data-category="web" data-title="BHI"
+          data-desc="Business solutions platform.">
+          <img src="assets/images/project/BHI.png" alt="BHI">
+          <div class="portfolio-overlay">
+            <h4>BHI</h4><span><a href="https://darkslategray-ibis-663291.hostingersite.com/" target="_blank"
+                style="color:white; text-decoration:none;">Visit Website</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies 
+  <section class="section-padding"
+    style="background: linear-gradient(180deg, transparent, rgba(0,240,255,0.03), transparent);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge-label">Deep Dive</span>
+        <h2>Case <span class="gradient-text">Studies</span></h2>
+        <p>Detailed looks at how we solved complex challenges and delivered measurable results.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6 reveal-left">
+          <div class="case-study-card glass-card">
+            <div class="cs-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=350&fit=crop"
+                alt="FinTech Dashboard Case Study">
+            </div>
+            <div class="cs-content">
+              <span class="cs-tag">Web Development</span>
+              <h3>FinTech Analytics Dashboard</h3>
+              <p>Built a real-time financial dashboard processing 10M+ data points daily with sub-second response times.
+                Integrated with 15+ banking APIs for comprehensive portfolio analysis.</p>
+              <div class="cs-metrics">
+                <div class="metric">
+                  <h4 class="gradient-text">10M+</h4><span>Daily Data Points</span>
+                </div>
+                <div class="metric">
+                  <h4 class="gradient-text">99.9%</h4><span>Uptime</span>
+                </div>
+                <div class="metric">
+                  <h4 class="gradient-text">200%</h4><span>User Growth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal-right">
+          <div class="case-study-card glass-card">
+            <div class="cs-image">
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=350&fit=crop"
+                alt="FitTrack Case Study">
+            </div>
+            <div class="cs-content">
+              <span class="cs-tag">Mobile App</span>
+              <h3>FitTrack Health & Fitness App</h3>
+              <p>Developed a cross-platform fitness app with AI-powered workout plans, real-time heart rate monitoring
+                integration, and social fitness challenges that drove viral growth.</p>
+              <div class="cs-metrics">
+                <div class="metric">
+                  <h4 class="gradient-text">500K+</h4><span>Downloads</span>
+                </div>
+                <div class="metric">
+                  <h4 class="gradient-text">4.8★</h4><span>App Rating</span>
+                </div>
+                <div class="metric">
+                  <h4 class="gradient-text">300%</h4><span>Engagement</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- Client Results Stats -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge-label">Results</span>
+        <h2>Impact We've <span class="gradient-text">Delivered</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-item reveal">
+            <div class="stat-number gradient-text" data-count="20" data-suffix="+">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item reveal">
+            <div class="stat-number gradient-text" data-count="99" data-suffix="%">0</div>
+            <div class="stat-label">Success Rate</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item reveal">
+            <div class="stat-number gradient-text" data-count="250" data-suffix="%">0</div>
+            <div class="stat-label">Avg. ROI</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item reveal">
+            <div class="stat-number gradient-text" data-count="200" data-suffix="+">0</div>
+            <div class="stat-label">Users Reached</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal-scale">
+        <h2>Ready to Be Our <span class="gradient-text">Next Success Story</span>?</h2>
+        <p>Let's create something extraordinary together. Tell us about your project and we'll make it happen.</p>
+        <a href="contact.html" class="btn-glow btn-magnetic"><i class="bi bi-rocket-takeoff"></i> Start Your Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="portfolio-lightbox" id="portfolio-lightbox">
+    <span class="lb-close">&times;</span>
+    <div class="lb-content">
+      <img class="lb-image" src="" alt="">
+      <h4 class="lb-title"></h4>
+      <p class="lb-desc"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">Logic<span>Wix</span></div>
+          <p class="footer-desc">We craft premium digital experiences that drive growth, inspire engagement, and deliver
+            measurable results.</p>
+          <div class="social-links"><a href="#"><i class="bi bi-twitter-x"></i></a><a href="https://www.linkedin.com/in/sher-singh-445493386/" target="_blank"><i
+                class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-dribbble"></i></a><a href="https://github.com/SherSinghDev" target="_blank"><i
+                class="bi bi-github"></i></a></div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6>Company</h6>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Services</h6>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">Digital Marketing</a></li>
+            <li><a href="services.html">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Get In Touch</h6>
+          <ul class="footer-links">
+            <li><i class="bi bi-envelope me-2" style="color:var(--primary)"></i> websitedeveloper003@gmail.com</li>
+            <li><i class="bi bi-telephone me-2" style="color:var(--primary)"></i> +91 80066 73446</li>
+            <li><i class="bi bi-geo-alt me-2" style="color:var(--primary)"></i> World Wide Available</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LogicWix. All rights reserved. Crafted with <i class="bi bi-heart-fill"
+            style="color:var(--accent)"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/portfolio.js"></script>
+</body>
+
+</html>

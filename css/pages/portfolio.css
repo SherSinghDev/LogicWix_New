@@ -1,0 +1,37 @@
+/* ===== Portfolio Page Styles ===== */
+.filter-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 40px; }
+.filter-btn {
+  padding: 8px 24px; border-radius: 50px; border: 1px solid var(--border-glass);
+  background: transparent; color: var(--text-secondary);
+  font-size: 0.85rem; font-weight: 500; cursor: pointer;
+  transition: var(--transition);
+}
+.filter-btn:hover, .filter-btn.active {
+  background: rgba(0,240,255,0.1); border-color: rgba(0,240,255,0.3);
+  color: var(--primary);
+}
+
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.portfolio-grid .portfolio-item { aspect-ratio: 4/3; }
+.portfolio-grid .portfolio-item.hidden { display: none; }
+
+/* Case Study */
+.case-study-card { overflow: hidden; }
+.case-study-card .cs-image { overflow: hidden; }
+.case-study-card .cs-image img { width: 100%; height: 300px; object-fit: cover; transition: transform 0.6s; }
+.case-study-card:hover .cs-image img { transform: scale(1.05); }
+.case-study-card .cs-content { padding: 36px; }
+.case-study-card .cs-tag {
+  display: inline-block; padding: 4px 14px; border-radius: 50px;
+  background: rgba(0,240,255,0.1); color: var(--primary);
+  font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.case-study-card .cs-content h3 { font-size: 1.3rem; margin-bottom: 12px; }
+.case-study-card .cs-content p { color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 20px; }
+.cs-metrics { display: flex; gap: 30px; padding-top: 20px; border-top: 1px solid var(--border-glass); }
+.cs-metrics .metric h4 { font-size: 1.5rem; margin-bottom: 2px; }
+.cs-metrics .metric span { color: var(--text-muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; }
+
+@media (max-width: 991px) { .portfolio-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 575px) { .portfolio-grid { grid-template-columns: 1fr; } }

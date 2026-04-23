@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — LogicWix Digital Agency</title>
+  <meta name="description"
+    content="Get in touch with LogicWix to discuss your next digital project. We'd love to hear about your goals and help bring them to life.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+
+<body>
+
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Logic<span>Wix</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-cta d-none d-lg-block"><a href="contact.html" class="btn-glow">Get Started</a></div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Get In <span class="gradient-text">Touch</span></h1>
+    <p>Ready to start your project? We'd love to hear from you. Let's create something extraordinary together.</p>
+    <nav class="breadcrumb-custom" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Contact</li>
+      </ol>
+    </nav>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section class="section-padding" style="padding-top:60px;">
+    <div class="container">
+      <div class="row g-4 stagger-container">
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="contact-info-card glass-card tilt-card">
+            <div class="ci-icon"><i class="bi bi-globe"></i></div>
+            <h5>Availability</h5>
+            <p>World Wide Available<br>India / Remote</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="contact-info-card glass-card tilt-card">
+            <div class="ci-icon"><i class="bi bi-envelope"></i></div>
+            <h5>Email Us</h5>
+            <p><a href="mailto:websitedeveloper003@gmail.com">websitedeveloper003@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="contact-info-card glass-card tilt-card">
+            <div class="ci-icon"><i class="bi bi-telephone"></i></div>
+            <h5>Call Us</h5>
+            <p>+91 80066 73446</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 stagger-item">
+          <div class="contact-info-card glass-card tilt-card">
+            <div class="ci-icon"><i class="bi bi-clock"></i></div>
+            <h5>Working Hours</h5>
+            <p>24/7 Available<br>Worldwide Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Map -->
+  <section class="section-padding" style="padding-top:40px;">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8 reveal-left">
+          <div class="contact-form-card glass-card">
+            <h3>Send Us a <span class="gradient-text">Message</span></h3>
+            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form id="contact-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating-custom">
+                    <label>Full Name *</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating-custom">
+                    <label>Email Address *</label>
+                    <input type="email" id="email" placeholder="john@example.com" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating-custom">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating-custom">
+                    <label>Service Interested In</label>
+                    <select id="subject">
+                      <option value="">Select a service</option>
+                      <option>Web Development</option>
+                      <option>Mobile App Development</option>
+                      <option>UI/UX Design</option>
+                      <option>Digital Marketing</option>
+                      <option>Brand Identity</option>
+                      <option>Cloud Solutions</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating-custom">
+                    <label>Budget Range</label>
+                    <select id="budget">
+                      <option value="">Select budget range</option>
+                      <option>₹4000 — ₹10,000</option>
+                      <option>₹10,000 — ₹50,000</option>
+                      <option>₹50,000 — ₹1,50,000</option>
+                      <option>₹1,50,000 — ₹5,00,000</option>
+                      <option>₹5,00,000+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating-custom">
+                    <label>Project Details *</label>
+                    <textarea id="message" rows="5" placeholder="Tell us about your project, goals, and timeline..."
+                      required></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-glow"><i class="bi bi-send"></i> Send Message</button>
+                </div>
+              </div>
+              <div class="form-message" id="form-message"></div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal-right">
+          <!-- Map -->
+
+          <!-- Social -->
+          <div class="glass-card" style="padding:30px; text-align:center;">
+            <h5 style="font-size:1.1rem; margin-bottom:16px;">Follow Us</h5>
+            <div class="social-links" style="justify-content:center;">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.linkedin.com/in/sher-singh-445493386/" target="_blank"><i
+                  class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-dribbble"></i></a>
+              <a href="#"><i class="bi bi-behance"></i></a>
+              <a href="https://github.com/SherSinghDev" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal-scale">
+        <h2>Prefer a <span class="gradient-text">Quick Chat</span>?</h2>
+        <p>Schedule a free 30-minute consultation call and let's discuss your project requirements.</p>
+        <a href="#" class="btn-glow btn-magnetic"><i class="bi bi-calendar-check"></i> Book a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">Logic<span>Wix</span></div>
+          <p class="footer-desc">We craft premium digital experiences that drive growth, inspire engagement, and deliver
+            measurable results.</p>
+          <div class="social-links"><a href="#"><i class="bi bi-twitter-x"></i></a><a
+              href="https://www.linkedin.com/in/sher-singh-445493386/" target="_blank"><i
+                class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-dribbble"></i></a><a
+              href="https://github.com/SherSinghDev" target="_blank"><i class="bi bi-github"></i></a></div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6>Company</h6>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Services</h6>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">Digital Marketing</a></li>
+            <li><a href="services.html">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Get In Touch</h6>
+          <ul class="footer-links">
+            <li><i class="bi bi-envelope me-2" style="color:var(--primary)"></i> websitedeveloper003@gmail.com</li>
+            <li><i class="bi bi-telephone me-2" style="color:var(--primary)"></i> +91 80066 73446</li>
+            <li><i class="bi bi-geo-alt me-2" style="color:var(--primary)"></i> World Wide Available</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LogicWix. All rights reserved. Crafted with <i class="bi bi-heart-fill"
+            style="color:var(--accent)"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/contact.js"></script>
+</body>
+
+</html>

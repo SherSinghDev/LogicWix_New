@@ -1,0 +1,85 @@
+/* ===== Services Page Styles ===== */
+.service-detail-card { padding: 40px; height: 100%; position: relative; overflow: hidden; }
+.service-detail-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gradient-main); opacity: 0; transition: var(--transition);
+}
+.service-detail-card:hover::before { opacity: 1; }
+.service-detail-card .svc-icon {
+  width: 60px; height: 60px; border-radius: var(--radius-sm);
+  background: var(--gradient-card); border: 1px solid var(--border-glass);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; color: var(--primary); margin-bottom: 24px;
+}
+.service-detail-card h4 { font-size: 1.15rem; margin-bottom: 12px; }
+.service-detail-card p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px; }
+.service-detail-card .svc-features { padding: 0; }
+.service-detail-card .svc-features li {
+  color: var(--text-secondary); font-size: 0.85rem;
+  padding: 6px 0; display: flex; align-items: center; gap: 8px;
+}
+.service-detail-card .svc-features li i { color: var(--primary); font-size: 0.7rem; }
+
+/* Process Steps */
+.process-step { text-align: center; position: relative; padding: 30px 20px; }
+.process-step .step-num {
+  width: 60px; height: 60px; border-radius: 50%;
+  background: var(--gradient-main);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700;
+  margin: 0 auto 20px; color: #fff;
+}
+.process-step h5 { font-size: 1.05rem; margin-bottom: 8px; }
+.process-step p { color: var(--text-secondary); font-size: 0.88rem; }
+.process-connector {
+  position: absolute; top: 30px; right: -50%; width: 100%;
+  height: 2px; background: var(--border-glass);
+  display: none;
+}
+@media (min-width: 768px) { .process-connector { display: block; } }
+
+/* Pricing Cards */
+.pricing-card { padding: 40px; text-align: center; height: 100%; position: relative; }
+.pricing-card.featured {
+  border-color: rgba(0,240,255,0.3);
+  background: linear-gradient(135deg, rgba(0,240,255,0.06), rgba(123,47,247,0.06));
+}
+.pricing-card .plan-badge {
+  display: inline-block; padding: 4px 16px; border-radius: 50px;
+  background: rgba(0,240,255,0.1); color: var(--primary);
+  font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 1px; margin-bottom: 16px;
+}
+.pricing-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+.pricing-card .price {
+  font-family: var(--font-heading); font-size: 2.8rem;
+  font-weight: 700; margin-bottom: 6px;
+}
+.pricing-card .price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
+.pricing-card .price-desc { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 24px; }
+.pricing-card .plan-features { text-align: left; margin-bottom: 30px; }
+.pricing-card .plan-features li {
+  padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem;
+  display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.pricing-card .plan-features li i { color: var(--primary); }
+
+/* FAQ */
+.faq-section .accordion-item {
+  background: var(--bg-glass); border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md) !important; margin-bottom: 12px; overflow: hidden;
+}
+.faq-section .accordion-button {
+  background: transparent; color: var(--text-primary);
+  font-weight: 600; font-size: 0.95rem; padding: 20px 24px;
+  box-shadow: none;
+}
+.faq-section .accordion-button:not(.collapsed) { color: var(--primary); }
+.faq-section .accordion-button::after {
+  filter: invert(1); opacity: 0.5;
+}
+.faq-section .accordion-body {
+  color: var(--text-secondary); font-size: 0.9rem;
+  padding: 0 24px 20px; line-height: 1.8;
+}
