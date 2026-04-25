@@ -263,3 +263,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// ===== Scroll Top Functionality =====
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollTopBtn = document.querySelector('.scroll-top-btn');
+
+  if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+});
+
+
+

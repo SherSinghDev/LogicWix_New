@@ -488,10 +488,10 @@ ul { list-style: none; }
   .contact-form-card { padding: 30px 20px; }
 }
 
-/* ===== WhatsApp Button ===== */
+/* ===== Floating Buttons (WhatsApp & Scroll Top) ===== */
 .whatsapp-btn {
   position: fixed;
-  bottom: 30px;
+  bottom: 105px;
   right: 30px;
   width: 60px;
   height: 60px;
@@ -514,12 +514,51 @@ ul { list-style: none; }
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
 
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-glass);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: var(--transition);
+  box-shadow: var(--shadow-glow);
+}
+
+.scroll-top-btn:hover {
+  background: rgba(0, 240, 255, 0.1);
+  border-color: var(--primary);
+  transform: translateY(-5px);
+  color: var(--primary);
+}
+
 @media (max-width: 767px) {
   .whatsapp-btn {
-    bottom: 20px;
-    right: 20px;
+    bottom: 100px;
+    right: 40px; /* Increased gap from corner */
     width: 50px;
     height: 50px;
     font-size: 26px;
   }
+  
+  .scroll-top-btn {
+    bottom: 35px;
+    right: 40px; /* Increased gap from corner */
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
 }
+
+
