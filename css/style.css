@@ -487,3 +487,39 @@ ul { list-style: none; }
   
   .contact-form-card { padding: 30px 20px; }
 }
+
+/* ===== WhatsApp Button ===== */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  z-index: 9999;
+  transition: var(--transition);
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  background: #128c7e;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+@media (max-width: 767px) {
+  .whatsapp-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
+}
